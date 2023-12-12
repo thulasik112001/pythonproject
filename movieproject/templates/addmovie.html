@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<body style="color:#d4ac0d ">
+<center>
+    <form method="POST" enctype="multipart/form-data" style="color:black ">
+{%csrf_token%}
+    <input type="text" name="name" placeholder="Enter movie name"><br>
+    <input type="text" name="description" placeholder="What your movie tells about"><br>
+    <input type="text" name="year" placeholder="Which year your movie got released?"><br>
+    <input type="text" name="ticketrate" placeholder="Enter movie ticketrate"><br>
+    <input type="file" name="img" placeholder="Enter an image represents your movie"><br>
+    <input type="submit">
+
+</form>
+</center>
+</body>
+{% endblock %}
